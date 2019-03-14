@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MOBILE DIRECTORY</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main.css">
+	<script src="main.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <h3 id="ph_logo" class="logo">PHONE DIRECTORY</h3>
+</div>
+<div class="container">
+		<div class="quickadd"><button class="s" id="QuickAdd"><b>ADD</b></button></div>
+		<div class="quickadd" id="back"><button class="s" id="Cancel"><b><span>&#8592;</span> BACK</b></button><br></div>
+		<div class="entry" id="e">
+			<div class="name"><b>NAME</b></div>
+			<div class="phone"><b>PHONE</b></div>
+		</div>
+		<div class="quickaddForm">	
+			<label for="fullname:"><b>Name:</b></label><br><input type="text" id="fullname" class="formFields" oninput="confirmfullname.value=fullname.value"><br>
+			<label for="phone:"><b>Phone:</b></label><br><input type="text" id="phone" class="formFields" oninput="confirmphone.value=phone.value">
+			<br><br>
+			<div class ="confimation">
+			<p style="color:#5584E0;"><b>Subscriber to be added<b></p>
+			<label ><b>Name:</b></label><input type="text" id="confirmfullname" style="border:none;" readonly><br>
+			<label ><b>Phone:</b></label><input type="text" id="confirmphone" style="border:none;" readonly>
+			</div>
+			<button id="Add"><b>ADD</b></button>
+		</div>
+		<div id="add_book" class="addbook">
+		</div>
+</div>
+</body>
+</html>
